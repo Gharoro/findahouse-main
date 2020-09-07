@@ -5,6 +5,7 @@ function numberWithCommas(num) {
 
 window.addEventListener("load", async (event) => {
   event.preventDefault();
+
   try {
     const response = await axios({
       method: "get",
@@ -130,7 +131,9 @@ const make_booking = async (event) => {
     });
     console.log(response.data);
 
-    toastr.success(response.data.message, { timeOut: 4000 });
+    Swal.fire(response.data.message, "", "success");
+
+    // toastr.info(response.data.message, { timeOut: 4000 });
   } catch (error) {
     console.log("ERROR: ", error.response);
     toastr.error(error.response.data.error);
