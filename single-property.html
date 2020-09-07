@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Mondy | Real Estate</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Real estate HTML Template" />
+    <meta name="keywords" content="real estate, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+    ></script>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <!-- Header Section -->
+    <header class="header-section">
+      <a href="index.html" class="site-logo">
+        <img src="img/logo.png" alt="" />
+      </a>
+      <nav class="header-nav">
+        <ul class="main-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a
+              href="https://pureheart-find-a-house-admin.netlify.app/index.html"
+              target="_blank"
+              >Agent</a
+            >
+          </li>
+        </ul>
+        <div class="header-right">
+          <div class="user-panel">
+            <a
+              href="https://pureheart-find-a-house-admin.netlify.app/login.html"
+              class="login"
+              >Sign in</a
+            >
+            <a
+              href="https://pureheart-find-a-house-admin.netlify.app/register.html"
+              class="register"
+              >Join us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section end -->
+
+    <!-- Page top Section end -->
+    <section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+      <div class="page-top-warp">
+        <form class="main-search-form">
+          <div class="search-type">
+            <div class="st-item">
+              <input type="radio" value="buy" name="st" id="buy" checked />
+              <label for="buy">Buy</label>
+            </div>
+            <div class="st-item">
+              <input type="radio" value="rent" name="st" id="rent" />
+              <label for="rent">Rent</label>
+            </div>
+          </div>
+          <div class="search-input si-v-2">
+            <input type="text" placeholder="Search by city or state" />
+            <button class="site-btn" type="submit">Search</button>
+            <button class="site-btn sb-light">Show Filters</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida.
+          </p>
+        </form>
+      </div>
+    </section>
+    <!-- Page top Section end -->
+
+    <!-- Single Property Section end -->
+    <section class="single-property-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8" id="single-property-detail"></div>
+          <div class="col-lg-4 col-md-8 sidebar">
+            <div class="agent-widget">
+              <img src="" id="agent-photo" alt="" />
+              <div class="aw-text">
+                <h4 id="agent-name"></h4>
+                <h6>Real Estate Agent</h6>
+                <p id="agent-office"></p>
+                <a
+                  href="#"
+                  onclick="toggleContactForm(event)"
+                  class="readmore-btn"
+                  id="contact-agent"
+                  >Make Booking / Enquiry</a
+                >
+              </div>
+              <form
+                method="post"
+                onsubmit="make_booking(event)"
+                class="contact-form"
+                id="contact-form"
+                style="display: none"
+              >
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input type="text" name="name" placeholder="Your name" />
+                  </div>
+                  <div class="col-lg-12">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your e-mail"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" name="subject" placeholder="Subject" />
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea placeholder="Message" name="message"></textarea>
+                  </div>
+                  <button type="submit" class="site-btn sb-big">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section end -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="copyright">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | This template is made with
+          <i class="fa fa-heart-o" aria-hidden="true"></i> by
+          <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/property.js"></script>
+  </body>
+</html>
