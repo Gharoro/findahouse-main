@@ -10,7 +10,7 @@ window.addEventListener("load", async (event) => {
   const items_row = document.getElementById("properties-row");
   const item_card = (item) => {
     return `
-    <div class="col-lg-4">
+      <div class="col-lg-4">
         <div class="property-item">
             <div class="pi-image">
                 <img src="${item.property_images[0]}" alt="" />
@@ -30,7 +30,7 @@ window.addEventListener("load", async (event) => {
               item.id
             }')">Find out more</a>
         </div>
-    </div>
+      </div>
     `;
   };
 
