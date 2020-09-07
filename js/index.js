@@ -20,10 +20,10 @@ window.addEventListener("load", async (event) => {
                     : `<div class="pi-badge new"> ${item.category.toUpperCase()} </div>`
                 }
             </div>
-            <h3>N${numberWithCommas(item.price)}</h3>
-            <h5>${
+            <h3>${
               item.title
-            } <span style="float: right;">${item.location.toUpperCase()}</span></h5>
+            } <span style="float: right;">${item.location.toUpperCase()}</span></h3>
+            <h5>N${numberWithCommas(item.price)}</h5>
             <h6> ${item.size} Beds</h6>
             <p>${item.description}</p>
             <a href="" class="readmore-btn" onclick="property_id('${
