@@ -12,6 +12,7 @@ window.addEventListener("load", async (event) => {
     });
 
     const property = response.data.data;
+    console.log(property);
     const realtor = response.data.realtor;
     const html = `
     <div class="single-property">
@@ -33,24 +34,6 @@ window.addEventListener("load", async (event) => {
                     ? `<div class="sp-badge offer">${property.category.toUpperCase()}</div>`
                     : `<div class="sp-badge new">${property.category.toUpperCase()}</div>`
                 }
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="sp-image">
-                <img
-                    src="${property.property_images[1]}"
-                    class="d-block w-100"
-                    alt=""
-                />
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="sp-image">
-                <img
-                    src="${property.property_images[2]}"
-                    class="d-block w-100"
-                    alt=""
-                />
                 </div>
             </div>
             </div>
